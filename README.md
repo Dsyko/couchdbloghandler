@@ -12,6 +12,14 @@ easy_install CouchDB
 
 Once that dependency is squared away you're ready to use the handler:
 
+The constructor takes three arguments: name of the database, server address, and doctype for the logs.
+
+```
+CouchDBLogHandler(dbname, server="http://localhost:5984/", doctype="log")
+```
+
+##example usage##
+
 ```python
 
     import logging

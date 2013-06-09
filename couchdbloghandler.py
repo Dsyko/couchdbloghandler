@@ -11,11 +11,7 @@ import logging
 import couchdb
 import time
 from uuid import uuid4
-import json
 
-
-def pretty(text):
-        return json.dumps(text, indent = 4, sort_keys = True)
 
 class CouchDBLogHandler(logging.Handler):
 
